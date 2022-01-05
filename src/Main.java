@@ -27,8 +27,6 @@ public class Main {
     public static void main(String[] args) {
         Object[] figures = fillArray();
         List<Object> list = Arrays.asList(figures);
-        for (Object figure : list) {
-            System.out.println(list.stream());
-        }
+        System.out.println(list);
     }
 }
