@@ -5,4 +5,8 @@ abstract class Figure {
 
     public abstract String getColor();
 
+    @Override
+    public String toString() {
+        return "Figure{}";
+    }
 }

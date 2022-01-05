@@ -18,21 +18,23 @@ public class Trapezoid extends Figure {
 
     @Override
     public double getArea() {
-        //TODO write method to get area for trapezoid
-        double area = 1 / 2. * (firstSideLength + secondSideLength) * height;
-        System.out.println("The area of the trapezoid is " + area);
-        return area;
+        return 1 / 2. * (firstSideLength + secondSideLength) * height;
     }
 
     @Override
     public String getColor() {
-        System.out.println("The color of triangle is " + this.color);
-        return color;
+        return this.color;
     }
 
     public double getMedian() {
-        double median = 1 / 2. * (firstSideLength + secondSideLength);
-        System.out.println("The median of the trapezoid is " + median);
-        return median;
+        return 1 / 2. * (firstSideLength + secondSideLength);
+    }
+
+    @Override
+    public String toString() {
+        return "Trapezoid: " +
+                "Area = " + getArea() +
+                ", median = " + getMedian() +
+                ", color is " + getColor();
     }
 }

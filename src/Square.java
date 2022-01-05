@@ -14,18 +14,23 @@ public class Square extends Figure {
 
     @Override
     public double getArea() {
-        int area = lengthSide * 2;
-        System.out.println("The area of the square is " + area);
-        return area;
+        return lengthSide * 2;
     }
 
     @Override
     public String getColor() {
-        System.out.println("The color of the square is " + color);
         return color;
     }
-    public int getLengthSide(){
-        System.out.println("The length of the one side of square is " + lengthSide);
+
+    public int getLengthSide() {
         return lengthSide;
+    }
+
+    @Override
+    public String toString() {
+        return "Square: " +
+                "Area = " + getArea() +
+                ", length of the side = " + getLengthSide() +
+                ", color is " + getColor();
     }
 }
