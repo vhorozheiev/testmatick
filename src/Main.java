@@ -16,16 +16,19 @@ public class Main {
                 case 0 -> obj = new Circle("red", 10);
                 case 1 -> obj = new Square("black", 6);
                 case 2 -> obj = new Triangle("white", 4, 5, 6);
-                case 3 -> obj = new Trapeze("green", 4, 4, 3, 3);
+                case 3 -> obj = new Trapezoid("green", 5, 4, 5);
             }
             array[i] = obj;
         }
         return array;
     }
 
+
     public static void main(String[] args) {
         Object[] figures = fillArray();
-        List<Object> l = Arrays.asList(figures);
-        System.out.println(l);
+        List<Object> list = Arrays.asList(figures);
+        for (Object figure : list) {
+            System.out.println(list.stream());
+        }
     }
 }

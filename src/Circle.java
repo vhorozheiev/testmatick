@@ -3,12 +3,8 @@ public class Circle extends Figure {
     private double radius;
 
     public Circle(String color, int radius) {
-        setColor(color);
-        this.radius = radius;
-    }
-
-    public void setColor(String color) {
         this.color = color;
+        this.radius = radius;
     }
 
     @Override
@@ -30,6 +26,7 @@ public class Circle extends Figure {
     }
 
     public double getRadius() {
-        return radius;
+        System.out.println("The radius of circle is " + this.radius);
+        return this.radius;
     }
 }

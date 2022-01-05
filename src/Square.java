@@ -24,4 +24,8 @@ public class Square extends Figure {
         System.out.println("The color of the square is " + color);
         return color;
     }
+    public int getLengthSide(){
+        System.out.println("The length of the one side of square is " + lengthSide);
+        return lengthSide;
+    }
 }
