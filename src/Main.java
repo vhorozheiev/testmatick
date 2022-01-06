@@ -1,11 +1,21 @@
 import java.util.Random;
 
 public class Main {
-    static int arraySize = rnd(25);
+    private static final int MAX = 25;
+    static int arraySize = rnd(MAX);
+
+    /**
+     * @param max quantity of shapes
+     * @return random integer
+     */
     public static int rnd(int max) {
         return (int) (Math.random() * ++max);
     }
 
+    /**
+     * this method fills the array with random shapes
+     * @return array filled with random shapes
+     */
     public static Object[] fillArray() {
         Object[] array = new Object[arraySize];
         Object obj = null;
@@ -24,9 +34,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Object[] figures = fillArray();
-        for (Object figure : figures) {
-            System.out.println(figure.toString());
+        Object[] shapes = fillArray();
+        for (Object shape : shapes) {
+            System.out.println(shape.toString());
         }
     }
 }
